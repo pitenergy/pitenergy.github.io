@@ -14,21 +14,22 @@
         }
         .instagram-link {
             font-size: 20px;
-            color: white; /* Texto blanco para mejor contraste */
+            color: white;
             font-weight: bold;
             text-decoration: none;
             background-color: #E1306C;
             padding: 10px 15px;
             border-radius: 5px;
             display: inline-block;
-            margin: 10px auto; /* Espaciado reducido entre enlaces */
+            margin: 10px auto;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         .container {
-            background-color: #FFFF00; /* Fondo amarillo */
+            background-color: #FFC300;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            text-align: center; /* Asegura que todo el contenido esté centrado */
         }
         body {
             font-family: 'Arial', sans-serif;
@@ -37,15 +38,29 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: ##FF0000; /* Fondo rojo */
+            background-color: #FF5733;
+        }
+        .image-container {
+            margin-top: 20px; /* Espacio adicional arriba para separar de otros elementos */
+        }
+        img {
+            width: 100%; /* Ajusta la imagen al ancho del contenedor */
+            max-width: 300px; /* Limita el tamaño máximo de la imagen */
+            border-radius: 10px; /* Bordes redondeados para las imágenes */
+            margin: 10px; /* Espacio alrededor de las imágenes */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para las imágenes */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <p class="congratulations">¡Congratulations, you have unlocked a prize. You can choose between a free hug or kiss!</p>
+        <p class="congratulations">Congratulations, you have unlocked a prize. You can choose between a free hug or kiss!</p>
         <a href="https://www.instagram.com/pitenergy/" target="_blank" class="instagram-link">Thanks for following me on Instagram: Pitenergy</a>
         <a href="https://www.instagram.com/mirallespepo/" target="_blank" class="instagram-link">Thanks for following me on Instagram: Mirallespepo</a>
+    </div>
+    <div class="image-container">
+        <!-- Asegúrate de reemplazar 'URL_DE_LA_IMAGEN_1' y 'URL_DE_LA_IMAGEN_2' con las URLs reales de tus imágenes -->
+        <img src="pepopeter.jpg" alt="Descripción de la imagen 1">
     </div>
 </body>
 </html>
