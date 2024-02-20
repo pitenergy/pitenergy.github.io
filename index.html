@@ -13,36 +13,36 @@
             justify-content: center;
             height: 100vh;
             background-color: #FF0000;
-            margin: 0; /* Se asegura que no haya márgenes en el body */
+            margin: 0; /* Asegurarse de que no hay margen exterior en el cuerpo */
         }
 
         .container {
             background-color: #FFFF00;
-            padding: 2vw; /* Padding relativo */
+            padding: 2vw;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             text-align: center;
-            max-width: 90%; /* Anchura máxima para asegurar la adaptabilidad */
-            margin: auto; /* Centra el contenedor */
+            max-width: 90%;
+            margin: auto;
         }
 
         .congratulations {
-            font-size: 6vw; /* Tamaño de fuente inicial para pantallas grandes */
+            font-size: 2rem; /* Tamaño de fuente inicial para pantallas grandes */
+            max-font-size: 24px; /* Tamaño máximo de fuente para evitar que el título sea demasiado grande */
             color: #FF0000;
             font-weight: bold;
             text-align: center;
             margin: 20px 0;
             word-wrap: break-word;
-            overflow-wrap: break-word; /* Se asegura que las palabras se rompan correctamente */
         }
 
         .instagram-link {
-            font-size: 2vw; /* Tamaño de fuente adaptativo */
+            font-size: 1rem;
             color: white;
             font-weight: bold;
             text-decoration: none;
             background-color: #FF0000;
-            padding: 1vw; /* Padding relativo */
+            padding: 1vw;
             border-radius: 5px;
             display: inline-block;
             margin: 10px auto;
@@ -54,8 +54,8 @@
         }
 
         img {
-            width: 100%; /* Asegura que las imágenes sean responsivas */
-            max-width: 300px; /* Limita el tamaño máximo para que no sea demasiado grande */
+            width: 100%;
+            max-width: 300px;
             border-radius: 10px;
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -64,17 +64,13 @@
         /* Media queries para pantallas más pequeñas */
         @media (max-width: 600px) {
             .congratulations {
-                font-size: 6vw; /* Tamaño de fuente más pequeño para pantallas estrechas */
+                font-size: 5vw; /* Tamaño de fuente más pequeño para pantallas más estrechas */
             }
-
+            .instagram-link {
+                padding: 4vw; /* Padding mayor para facilitar la interacción táctil */
+            }
             .container {
-                padding: 4vw; /* Más padding para pantallas pequeñas */
-            }
-        }
-
-        @media (max-width: 300px) {
-            .congratulations {
-                font-size: 5vw; /* Tamaño de fuente aún más pequeño para pantallas muy estrechas */
+                padding: 4vw; /* Más padding para evitar que el contenido toque los bordes */
             }
         }
     </style>
@@ -86,7 +82,6 @@
         <a href="https://www.instagram.com/mirallespepo/" target="_blank" class="instagram-link">Gracias por seguirme en Instagram: Mirallespepo</a>
     </div>
     <div class="image-container">
-        <!-- Asegúrate de reemplazar 'pepopeter.jpg' con la URL real de tu imagen -->
         <img src="pepopeter.jpg" alt="Descripción de la imagen 1">
     </div>
 </body>
