@@ -13,6 +13,7 @@
             justify-content: center;
             height: 100vh;
             background-color: #FF0000;
+            margin: 0; /* Se asegura que no haya márgenes en el body */
         }
 
         .container {
@@ -26,12 +27,13 @@
         }
 
         .congratulations {
-            font-size: 4vw; /* Tamaño de fuente basado en el ancho de la pantalla */
+            font-size: 6vw; /* Tamaño de fuente inicial para pantallas grandes */
             color: #FF0000;
             font-weight: bold;
             text-align: center;
             margin: 20px 0;
-            word-wrap: break-word; /* Evita que el texto se salga de su contenedor */
+            word-wrap: break-word;
+            overflow-wrap: break-word; /* Se asegura que las palabras se rompan correctamente */
         }
 
         .instagram-link {
@@ -62,14 +64,17 @@
         /* Media queries para pantallas más pequeñas */
         @media (max-width: 600px) {
             .congratulations {
-                font-size: 5vw; /* Aumenta el tamaño de fuente para una mejor legibilidad en pantallas pequeñas */
+                font-size: 6vw; /* Tamaño de fuente más pequeño para pantallas estrechas */
             }
-            .instagram-link {
-                font-size: 3.5vw; /* Ajusta el tamaño de la fuente para los enlaces */
-                padding: 2vw; /* Aumenta el padding para un mejor toque en pantallas táctiles */
-            }
+
             .container {
-                padding: 5vw; /* Aumenta el padding para asegurar suficiente espacio alrededor del contenido */
+                padding: 4vw; /* Más padding para pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 300px) {
+            .congratulations {
+                font-size: 5vw; /* Tamaño de fuente aún más pequeño para pantallas muy estrechas */
             }
         }
     </style>
