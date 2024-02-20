@@ -18,7 +18,7 @@
 
         .container {
             background-color: #FFFF00;
-            padding: 2vw;
+            padding: 20px; /* Fijo para pantallas grandes, ajustaremos para móviles más adelante */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             text-align: center;
@@ -27,22 +27,21 @@
         }
 
         .congratulations {
-            font-size: 4vw; /* Tamaño de fuente adaptativo */
+            font-size: 1.5rem; /* Tamaño fijo para pantallas grandes */
             color: #FF0000;
             font-weight: bold;
             text-align: center;
             margin: 20px 0;
             word-wrap: break-word;
-            max-font-size: 22px; /* Tamaño máximo de fuente */
         }
 
         .instagram-link {
-            font-size: 2vw;
+            font-size: 1rem;
             color: white;
             font-weight: bold;
             text-decoration: none;
             background-color: #FF0000;
-            padding: 1vw;
+            padding: 10px;
             border-radius: 5px;
             display: inline-block;
             margin: 10px auto;
@@ -55,33 +54,34 @@
         }
 
         img {
-            width: 80%;
-            max-width: 240px;
+            width: 50%; /* Más pequeña para ordenadores */
+            max-width: 240px; /* Limita el tamaño máximo */
             border-radius: 10px;
             display: block;
-            margin: 10px auto;
+            margin: 10px auto; /* Centra la imagen */
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
         .event-text {
             color: #FFFFFF;
-            font-size: 1.5rem;
+            font-size: 1.2rem; /* Tamaño fijo para pantallas grandes */
             text-align: center;
             margin-bottom: 20px;
         }
 
-        @media (max-width: 600px) {
-            .congratulations {
-                font-size: 5.5vw; /* Aumenta la legibilidad en dispositivos móviles */
+        /* Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
+            .congratulations, .event-text {
+                font-size: 4vw; /* Adaptativo para pantallas pequeñas */
             }
 
             .instagram-link {
-                font-size: 3.5vw; /* Tamaño de fuente más grande para enlaces en móviles */
-                padding: 2vw; /* Mayor padding para facilitar la interacción táctil */
+                font-size: 3vw;
+                padding: 2vw;
             }
 
-            .container {
-                padding: 4vw; /* Mayor padding para evitar que el contenido toque los bordes */
+            img {
+                width: 80%; /* Más grande para dispositivos móviles */
             }
         }
     </style>
