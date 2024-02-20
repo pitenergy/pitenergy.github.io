@@ -13,6 +13,7 @@
             justify-content: center;
             height: 100vh;
             background-color: #FF0000;
+            margin: 0;
         }
 
         .container {
@@ -22,16 +23,17 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             text-align: center;
             max-width: 90%;
-            margin: 5vh auto; /* Aumentado el margen superior e inferior */
+            margin: auto;
         }
 
         .congratulations {
-            font-size: 3vw;
+            font-size: 4vw; /* Tamaño de fuente adaptativo */
             color: #FF0000;
             font-weight: bold;
             text-align: center;
-            margin: 2vh 0; /* Aumentado el margen superior e inferior */
+            margin: 20px 0;
             word-wrap: break-word;
+            max-font-size: 22px; /* Tamaño máximo de fuente */
         }
 
         .instagram-link {
@@ -48,36 +50,38 @@
         }
 
         .image-container {
-            text-align: center; /* Esto asegura que todo el contenido esté centrado */
+            text-align: center;
             margin-top: 20px;
         }
 
         img {
-            width: 80%; /* Ajusta el ancho como prefieras */
-            max-width: 240px; /* Ajusta el tamaño máximo como prefieras */
+            width: 80%;
+            max-width: 240px;
             border-radius: 10px;
-            display: block; /* Esto hace que la imagen sea un bloque y respete el margen auto */
-            margin: 10px auto; /* Centra la imagen horizontalmente */
+            display: block;
+            margin: 10px auto;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
         .event-text {
-            color: #FFFFFF; /* o el color que prefieras para el texto */
-            font-size: 1.5rem; /* Tamaño de fuente para el texto adicional */
-            text-align: center; /* Centra el texto */
-            margin-bottom: 20px; /* Espacio antes de la imagen */
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 600px) {
             .congratulations {
-                font-size: 6vw;
+                font-size: 5.5vw; /* Aumenta la legibilidad en dispositivos móviles */
             }
+
             .instagram-link {
-                font-size: 3.5vw;
-                padding: 2vw;
+                font-size: 3.5vw; /* Tamaño de fuente más grande para enlaces en móviles */
+                padding: 2vw; /* Mayor padding para facilitar la interacción táctil */
             }
+
             .container {
-                padding: 5vw;
+                padding: 4vw; /* Mayor padding para evitar que el contenido toque los bordes */
             }
         }
     </style>
