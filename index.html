@@ -13,7 +13,6 @@
             justify-content: center;
             height: 100vh;
             background-color: #FF0000;
-            margin: 0; /* Asegurarse de que no hay margen exterior en el cuerpo */
         }
 
         .container {
@@ -23,21 +22,20 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             text-align: center;
             max-width: 90%;
-            margin: auto;
+            margin: 5vh auto; /* Aumentado el margen superior e inferior */
         }
 
         .congratulations {
-            font-size: 2rem; /* Tamaño de fuente inicial para pantallas grandes */
-            max-font-size: 24px; /* Tamaño máximo de fuente para evitar que el título sea demasiado grande */
+            font-size: 4vw;
             color: #FF0000;
             font-weight: bold;
             text-align: center;
-            margin: 20px 0;
+            margin: 2vh 0; /* Aumentado el margen superior e inferior */
             word-wrap: break-word;
         }
 
         .instagram-link {
-            font-size: 1rem;
+            font-size: 2vw;
             color: white;
             font-weight: bold;
             text-decoration: none;
@@ -50,27 +48,27 @@
         }
 
         .image-container {
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         img {
-            width: 100%;
-            max-width: 300px;
+            width: 80%; /* Reducir el ancho de la imagen */
+            max-width: 240px; /* Establecer un tamaño máximo más pequeño */
             border-radius: 10px;
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
-        /* Media queries para pantallas más pequeñas */
         @media (max-width: 600px) {
             .congratulations {
-                font-size: 5vw; /* Tamaño de fuente más pequeño para pantallas más estrechas */
+                font-size: 6vw;
             }
             .instagram-link {
-                padding: 4vw; /* Padding mayor para facilitar la interacción táctil */
+                font-size: 3.5vw;
+                padding: 2vw;
             }
             .container {
-                padding: 4vw; /* Más padding para evitar que el contenido toque los bordes */
+                padding: 5vw;
             }
         }
     </style>
